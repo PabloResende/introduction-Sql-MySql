@@ -12,7 +12,7 @@ services:
       - --innodb_force_recovery=0
     volumes: 
       - ~/.MySQLDBData/mysqlonly/mysql_knex:/var/lib/mysql
-    ports:
+    ports: 
       - 3307:3306
     environment:
       MYSQL_ROOT_PASSWORD: senha
